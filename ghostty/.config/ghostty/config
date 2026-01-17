@@ -1,0 +1,96 @@
+# Ghostty Configuration file (~/.config/ghostty/config)
+
+# --- General Settings ---
+
+# Equivalent to config.default_prog = { "pwsh.exe", "-NoLogo" }
+# Ghostty uses 'command' for the default program. This is for Windows.
+# Ghostty is primarily for macOS/Linux, so confirm this path/command works on your OS.
+# command = pwsh.exe -NoLogo 
+# If you are on Linux/macOS, you might remove this to use your default shell, or set it to:
+# command = /usr/bin/zsh
+# command = /usr/bin/bash
+
+# Equivalent to config.window_background_opacity = 0.75
+# Note: Ghostty uses 'background-opacity'.
+background-opacity = 0.75
+
+# Equivalent to config.macos_window_background_blur = 20
+# Ghostty uses 'macos-background-blur' (only for macOS)
+# macos-background-blur = 20
+
+# Equivalent to config.window_decorations = "NONE"
+window-decoration = false
+
+# Equivalent to config.enable_tab_bar = true / config.use_fancy_tab_bar = false
+# The tab bar is generally enabled by default. There is no direct setting for 'use_fancy_tab_bar'.
+# tabs-visible = true 
+# tabs-type = bottom 
+
+# --- Keybindings ---
+# Ghostty keybindings follow the format: keybind = trigger=action:parameter
+# Modifiers are ctrl, shift, alt/opt, super/cmd.
+
+# Ghostty does NOT have a simple action to toggle transparency like your Lua function.
+# The keybind below is IGNORED, as Ghostty does not support custom logic in keybindings.
+# The transparency value is set statically above with 'background-opacity = 0.75'.
+# keybind = ctrl+alt+shift+t=IGNORED_TRANSPARENCY_TOGGLE_ACTION 
+
+# Tabs
+# { key = "w", mods = "CTRL|SHIFT", action = wezterm.action({ CloseCurrentTab = { confirm = false } }) },
+keybind = ctrl+shift+w=close_surface
+
+# { key = "t", mods = "CTRL|SHIFT", action = wezterm.action({ SpawnTab = "DefaultDomain" }) },
+keybind = ctrl+shift+t=new_tab
+
+# { key = "Tab", mods = "CTRL", action = wezterm.action({ ActivateTabRelative = 1 }) },
+keybind = ctrl+tab=next_tab
+
+# { key = "Tab", mods = "CTRL|SHIFT", action = wezterm.action({ ActivateTabRelative = -1 }) },
+keybind = ctrl+shift+tab=previous_tab
+
+# Panes (splits)
+# { key = "q", mods = "CTRL|SHIFT", action = wezterm.action({ CloseCurrentPane = { confirm = false } }) },
+# Ghostty's default is likely ctrl+shift+w (same as tab close) but can be set explicitly
+keybind = ctrl+shift+q=close_surface
+
+# { key = "|", mods = "CTRL|SHIFT", action = wezterm.action({ SplitHorizontal = { domain = "CurrentPaneDomain" } }) },
+# SplitHorizontal typically means side-by-side (left/right) in a terminal split, bound to '|' which is shift+\
+keybind = ctrl+shift+\=new_split:right
+
+# { key = "_", mods = "CTRL|SHIFT", action = wezterm.action({ SplitVertical = { domain = "CurrentPaneDomain" } }) },
+# SplitVertical typically means top/bottom, bound to '_' which is shift+-
+keybind = ctrl+shift+-=new_split:down
+
+# Move between panes (Ghostty uses 'goto_split')
+# { key = "h", mods = "CTRL|SHIFT", action = wezterm.action({ ActivatePaneDirection = "Left" }) },
+keybind = ctrl+shift+h=goto_split:left
+
+# { key = "l", mods = "CTRL|SHIFT", action = wezterm.action({ ActivatePaneDirection = "Right" }) },
+keybind = ctrl+shift+l=goto_split:right
+
+# { key = "k", mods = "CTRL|SHIFT", action = wezterm.action({ ActivatePaneDirection = "Up" }) },
+keybind = ctrl+shift+k=goto_split:top
+
+# { key = "j", mods = "CTRL|SHIFT", action = wezterm.action({ ActivatePaneDirection = "Down" }) },
+keybind = ctrl+shift+j=goto_split:bottom
+
+# Resize panes (Ghostty uses 'resize_split:direction,amount')
+# Ghostty resize amount is in pixels. 5 and 2 are arbitrary guesses for a small size.
+keybind = ctrl+alt+shift+h=resize_split:left,20
+
+keybind = ctrl+alt+shift+l=resize_split:right,20
+
+keybind = ctrl+alt+shift+k=resize_split:up,20
+
+keybind = ctrl+alt+shift+j=resize_split:down,20
+
+keybind = ctrl+shift+z=toggle_split_zoom
+keybind = ctrl+shift+alt+z=toggle_split_zoom
+
+font-family = "Monaspace Argon NF"
+font-size = 13
+
+theme = custom_theme
+
+# Slowdown mouse scrolling
+mouse-scroll-multiplier = 0.95
