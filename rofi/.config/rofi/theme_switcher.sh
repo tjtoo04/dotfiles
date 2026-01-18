@@ -21,6 +21,7 @@ else
         if [ "$DESKTOP_SESSION" == "mango" ]; then
             mmsg -d reload_config
         fi
+        swayosd-client --config="$HOME/.config/swayosd/config.toml"
 
         # IMPORTANT: To make Rofi close after selection, we exit here
         exit 0

@@ -4,28 +4,28 @@ css = { src = "colors.css", dst = "~/.config/" }
  */
 
 :root {
-    --wallpaper: url("/home/tjtoo04/Wallpapers/purpletree.png");
+    --wallpaper: url("/home/tjtoo04/Wallpapers/gameboy.png");
 
     /* Special */
-    --background: #252528;
-    --foreground: #FFF8F5;
-    --cursor: #A9ACBC;
+    --background: #19181A;
+    --foreground: #F4F4EA;
+    --cursor: #AAB39F;
 
     /* Colors */
-    --color0:  #4B4A4E;
-    --color1:  #242336;
-    --color2:  #536083;
-    --color3:  #9E7B84;
-    --color4:  #8796B5;
-    --color5:  #E1BEE5;
-    --color6:  #FEECE2;
-    --color7:  #F6EDE8;
-    --color8:  #ACA6A2;
-    --color9:  #242336;
-    --color10: #536083;
-    --color11: #9E7B84;
-    --color12: #8796B5;
-    --color13: #E1BEE5;
-    --color14: #FEECE2;
-    --color15: #F6EDE8;
+    --color0:  #403F41;
+    --color1:  #383C31;
+    --color2:  #5F7255;
+    --color3:  #7A6A61;
+    --color4:  #A59D93;
+    --color5:  #8CAD82;
+    --color6:  #E0DFC2;
+    --color7:  #E7E7D8;
+    --color8:  #A2A197;
+    --color9:  #383C31;
+    --color10: #5F7255;
+    --color11: #7A6A61;
+    --color12: #A59D93;
+    --color13: #8CAD82;
+    --color14: #E0DFC2;
+    --color15: #E7E7D8;
 }
