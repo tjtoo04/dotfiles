@@ -9,12 +9,13 @@
 
 /*****----- Configuration -----*****/
 configuration {
-	modi:                       "drun,run,filebrowser,window";
+    modi:                       "drun,run,filebrowser,window,wallpapers:/home/tjtoo04/.config/rofi/theme_switcher.sh";
     show-icons:                 true;
     display-drun:               "";
     display-run:                "";
     display-filebrowser:        "";
     display-window:             "";
+    display-wallpapers:             "W";
 	drun-display-format:        "{name}";
 	window-format:              "{w} · {c} · {t}";
 }

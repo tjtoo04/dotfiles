@@ -44,3 +44,9 @@ palette = "dark"
 # target: ABSOLUTE path in which to place a file with generated templated values.
 # ¡ If either one is a directory, then both SHOULD be one. !
 # zathura = { template = 'zathura', target = '~/.config/zathura/zathurarc' }
+
+css = { src = "colors.css", dst = "~/.config/wallust/output/theme.css" }
+mango = { src = "mango.conf", dst = "~/.config/mango/config.conf" }
+ghostty = { src = "ghostty_theme", dst = "~/.config/ghostty/themes/ghostty_theme" }
+rofi = { src = "customrofi.rasi", dst = "~/.config/rofi/colors/customrofi.rasi" }
+swayosd = { src = "swayosd.css", dst = "~/.config/swayosd/style.css" }

@@ -1,0 +1,31 @@
+/* CSS variables for wallust
+ * You can use this template by adding the following to wallust.toml:
+css = { src = "colors.css", dst = "~/.config/" }
+ */
+
+:root {
+    --wallpaper: url("/home/tjtoo04/Wallpapers/purpletree.png");
+
+    /* Special */
+    --background: #252528;
+    --foreground: #FFF8F5;
+    --cursor: #A9ACBC;
+
+    /* Colors */
+    --color0:  #4B4A4E;
+    --color1:  #242336;
+    --color2:  #536083;
+    --color3:  #9E7B84;
+    --color4:  #8796B5;
+    --color5:  #E1BEE5;
+    --color6:  #FEECE2;
+    --color7:  #F6EDE8;
+    --color8:  #ACA6A2;
+    --color9:  #242336;
+    --color10: #536083;
+    --color11: #9E7B84;
+    --color12: #8796B5;
+    --color13: #E1BEE5;
+    --color14: #FEECE2;
+    --color15: #F6EDE8;
+}
