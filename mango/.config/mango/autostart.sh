@@ -15,3 +15,4 @@ mako &
 dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=wlroots &
 waybar -c ~/.config/waybar/config.jsonc -s ~/.config/waybar/style.css >/dev/null 2>&1 &
 swaybg -i ~/Wallpapers/b-314.jpg >/dev/null 2>&1 &
+exec swayosd-server &
