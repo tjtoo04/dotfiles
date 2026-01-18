@@ -15,7 +15,7 @@ configuration {
     display-run:                "";
     display-filebrowser:        "";
     display-window:             "";
-    display-wallpapers:             "W";
+    display-wallpapers:             "";
 	drun-display-format:        "{name}";
 	window-format:              "{w} · {c} · {t}";
 }
