@@ -7,13 +7,7 @@
   "gtk-layer-shell": true,
   "passthrough": false,
   "fixed-center": true,
-  "modules-left": [
-    "ext/workspaces",
-    "custom/sep",
-    "dwl/window#layout",
-    "custom/sep",
-    "dwl/window#title",
-  ],
+  "modules-left": ["ext/workspaces", "custom/sep", "dwl/window#title"],
   "modules-center": ["mpris"],
   "modules-right": [
     "cpu",
