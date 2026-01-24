@@ -1,80 +1,138 @@
-@import "../omarchy/current/theme/waybar.css";
+/* * Waybar style template for Wallust 
+ * A more colorful, dynamic mapping
+ */
 
 * {
-  background-color: @background;
-  color: @foreground;
-
-  border: none;
-  border-radius: 0;
   min-height: 0;
+  min-width: 0;
   font-family: Monaspace Argon NF;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 600;
 }
 
-.modules-left {
-  margin-left: 8px;
+window#waybar {
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  background-color: #171115;
+  /* border-bottom: 2px solid #83878E; */ /* Optional: adds a separator line */
 }
 
-.modules-right {
-  margin-right: 8px;
-}
-
+/* --- Workspaces --- */
 #workspaces button {
-  all: initial;
-  padding: 0 6px;
-  margin: 0 1.5px;
-  min-width: 9px;
+  padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 6px;
+  background-color: #83878E; /* Muted background for inactive */
+  color: #D5DAE1;
 }
 
-#workspaces button.empty {
-  opacity: 0.5;
+#workspaces button:hover {
+  color: #171115;
+  background-color: #BAC1CC; /* Brightest contrast */
 }
 
-#tray,
-#cpu,
-#battery,
-#network,
-#bluetooth,
+#workspaces button.active {
+  background-color: #287781; /* Primary Accent (Blue) */
+  color: #171115;
+}
+
+#workspaces button.urgent {
+  background-color: #263542; /* Alert Color (Red) */
+  color: #D5DAE1;
+}
+
+/* --- System Modules --- */
+#clock,
 #pulseaudio,
-#custom-omarchy,
+#custom-logo,
 #custom-power,
-#custom-screenrecording-indicator,
-#custom-update {
-  min-width: 12px;
-  margin: 0 7.5px;
+#cpu,
+#memory,
+#window,
+#battery,
+#mpris {
+  padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 6px;
+  background-color: #3E393D; /* Dark contrast box */
 }
 
-#custom-omarchy {
-  font-size: 8px;
-  font-family: Monaspace Argon NF;
+/* --- Specific Module Coloring --- */
+#custom-logo {
+  color: #287781; /* Bright Blue */
 }
 
-#custom-expand-icon {
-  margin-right: 7px;
+#window {
+  color: #8794A9; /* Cyan/Aqua */
 }
 
-tooltip {
-  padding: 2px;
+#mpris.playing {
+  color: #7C120E; /* Vibrant Green */
 }
 
-#custom-update {
-  font-size: 10px;
+#mpris.paused {
+  color: #83878E; /* Grayed out */
+}
+
+#cpu {
+  color: #E02F0B; /* Magenta/Pink */
+}
+
+#memory {
+  color: #6D5565; /* Yellow/Orange */
+}
+
+#battery {
+  color: #7C120E; /* Greenish */
+}
+
+#battery.warning {
+  color: #6D5565; /* Orange */
+}
+
+#battery.critical {
+  color: #263542; /* Red */
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#pulseaudio {
+  color: #287781; /* Blue */
+}
+
+#pulseaudio.muted {
+  color: #83878E;
 }
 
 #clock {
-  margin-left: 8.75px;
+  color: #8794A9; /* Teal */
 }
 
-.hidden {
-  opacity: 0;
+#custom-power {
+  color: #8794A9; /* Brighter Red/Orange */
 }
 
-#custom-screenrecording-indicator {
-  min-width: 12px;
-  margin-left: 8.75px;
-  font-size: 10px;
+#battery {
+color: #8794A9
 }
 
-#custom-screenrecording-indicator.active {
-  color: #a55555;
+/* --- Tooltip --- */
+tooltip {
+  background-color: #171115;
+  border: 2px solid #287781;
+}
+
+tooltip label {
+  color: #D5DAE1;
+}
+
+/* --- Animations --- */
+@keyframes blink {
+  to {
+    background-color: #263542;
+    color: #D5DAE1;
+  }
 }
