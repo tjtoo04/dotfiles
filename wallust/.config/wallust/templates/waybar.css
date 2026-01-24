@@ -116,6 +116,10 @@ window#waybar {
   color: {{color6}}; /* Brighter Red/Orange */
 }
 
+#custom-notification {
+color: {{color6}}
+}
+
 #battery {
 color: {{color6}}
 }
