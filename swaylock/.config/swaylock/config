@@ -1,0 +1,16 @@
+ignore-empty-password
+font="Monaspace Argon NF"
+
+clock
+timestr=%R
+datestr=%a, %e of %B
+
+image=~/.config/mango/current_wallpaper
+
+fade-in=0.3
+
+effect-blur=20x6
+
+indicator
+
+indicator-caps-lock
