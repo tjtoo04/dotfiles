@@ -13,7 +13,7 @@
 window#waybar {
   transition-property: background-color;
   transition-duration: 0.5s;
-  background-color: #19181A;
+  background-color: #19181a;
   /* border-bottom: 2px solid #A2A197; */ /* Optional: adds a separator line */
 }
 
@@ -22,23 +22,23 @@ window#waybar {
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
   border-radius: 6px;
-  background-color: #A2A197; /* Muted background for inactive */
-  color: #F4F4EA;
+  background-color: #a2a197; /* Muted background for inactive */
+  color: #f4f4ea;
 }
 
 #workspaces button:hover {
-  color: #19181A;
-  background-color: #E7E7D8; /* Brightest contrast */
+  color: #19181a;
+  background-color: #e7e7d8; /* Brightest contrast */
 }
 
 #workspaces button.active {
-  background-color: #A59D93; /* Primary Accent (Blue) */
-  color: #19181A;
+  background-color: #a59d93; /* Primary Accent (Blue) */
+  color: #19181a;
 }
 
 #workspaces button.urgent {
-  background-color: #383C31; /* Alert Color (Red) */
-  color: #F4F4EA;
+  background-color: #383c31; /* Alert Color (Red) */
+  color: #f4f4ea;
 }
 
 /* --- System Modules --- */
@@ -49,49 +49,50 @@ window#waybar {
 #cpu,
 #memory,
 #window,
+#custom-notification,
 #battery,
 #mpris {
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
   border-radius: 6px;
-  background-color: #403F41; /* Dark contrast box */
+  background-color: #403f41; /* Dark contrast box */
 }
 
 /* --- Specific Module Coloring --- */
 #custom-logo {
-  color: #A59D93; /* Bright Blue */
+  color: #a59d93; /* Bright Blue */
 }
 
 #window {
-  color: #E0DFC2; /* Cyan/Aqua */
+  color: #e0dfc2; /* Cyan/Aqua */
 }
 
 #mpris.playing {
-  color: #5F7255; /* Vibrant Green */
+  color: #5f7255; /* Vibrant Green */
 }
 
 #mpris.paused {
-  color: #A2A197; /* Grayed out */
+  color: #a2a197; /* Grayed out */
 }
 
 #cpu {
-  color: #8CAD82; /* Magenta/Pink */
+  color: #8cad82; /* Magenta/Pink */
 }
 
 #memory {
-  color: #7A6A61; /* Yellow/Orange */
+  color: #7a6a61; /* Yellow/Orange */
 }
 
 #battery {
-  color: #5F7255; /* Greenish */
+  color: #5f7255; /* Greenish */
 }
 
 #battery.warning {
-  color: #7A6A61; /* Orange */
+  color: #7a6a61; /* Orange */
 }
 
 #battery.critical {
-  color: #383C31; /* Red */
+  color: #383c31; /* Red */
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: linear;
@@ -100,39 +101,39 @@ window#waybar {
 }
 
 #pulseaudio {
-  color: #A59D93; /* Blue */
+  color: #a59d93; /* Blue */
 }
 
 #pulseaudio.muted {
-  color: #A2A197;
+  color: #a2a197;
 }
 
 #clock {
-  color: #E0DFC2; /* Teal */
+  color: #e0dfc2; /* Teal */
 }
 
 #custom-power {
-  color: #E0DFC2; /* Brighter Red/Orange */
+  color: #e0dfc2; /* Brighter Red/Orange */
 }
 
 #battery {
-color: #E0DFC2
+  color: #e0dfc2;
 }
 
 /* --- Tooltip --- */
 tooltip {
-  background-color: #19181A;
-  border: 2px solid #A59D93;
+  background-color: #19181a;
+  border: 2px solid #a59d93;
 }
 
 tooltip label {
-  color: #F4F4EA;
+  color: #f4f4ea;
 }
 
 /* --- Animations --- */
 @keyframes blink {
   to {
-    background-color: #383C31;
-    color: #F4F4EA;
+    background-color: #383c31;
+    color: #f4f4ea;
   }
 }

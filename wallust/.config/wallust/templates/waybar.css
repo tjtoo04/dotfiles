@@ -49,6 +49,7 @@ window#waybar {
 #cpu,
 #memory,
 #window,
+#custom-notification,
 #battery,
 #mpris {
   padding: 0.3rem 0.6rem;

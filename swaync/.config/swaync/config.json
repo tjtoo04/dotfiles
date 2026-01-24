@@ -81,11 +81,11 @@
         },
         {
           "label": "󰖩",
-          "command": "iwgtk"
+          "command": "ghostty -e impala"
         },
         {
           "label": "󰂯",
-          "command": "bluetui"
+          "command": "ghostty -e bluetui"
         },
         {
           "label": "",
