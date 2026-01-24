@@ -1,0 +1,138 @@
+/* * Waybar style template for Wallust 
+ * A more colorful, dynamic mapping
+ */
+
+* {
+  min-height: 0;
+  min-width: 0;
+  font-family: Monaspace Argon NF;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+window#waybar {
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  background-color: {{background}};
+  /* border-bottom: 2px solid {{color8}}; */ /* Optional: adds a separator line */
+}
+
+/* --- Workspaces --- */
+#workspaces button {
+  padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 6px;
+  background-color: {{color8}}; /* Muted background for inactive */
+  color: {{foreground}};
+}
+
+#workspaces button:hover {
+  color: {{background}};
+  background-color: {{color15}}; /* Brightest contrast */
+}
+
+#workspaces button.active {
+  background-color: {{color4}}; /* Primary Accent (Blue) */
+  color: {{background}};
+}
+
+#workspaces button.urgent {
+  background-color: {{color1}}; /* Alert Color (Red) */
+  color: {{foreground}};
+}
+
+/* --- System Modules --- */
+#clock,
+#pulseaudio,
+#custom-logo,
+#custom-power,
+#cpu,
+#memory,
+#window,
+#battery,
+#mpris {
+  padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 6px;
+  background-color: {{color0}}; /* Dark contrast box */
+}
+
+/* --- Specific Module Coloring --- */
+#custom-logo {
+  color: {{color12}}; /* Bright Blue */
+}
+
+#window {
+  color: {{color14}}; /* Cyan/Aqua */
+}
+
+#mpris.playing {
+  color: {{color10}}; /* Vibrant Green */
+}
+
+#mpris.paused {
+  color: {{color8}}; /* Grayed out */
+}
+
+#cpu {
+  color: {{color13}}; /* Magenta/Pink */
+}
+
+#memory {
+  color: {{color11}}; /* Yellow/Orange */
+}
+
+#battery {
+  color: {{color2}}; /* Greenish */
+}
+
+#battery.warning {
+  color: {{color3}}; /* Orange */
+}
+
+#battery.critical {
+  color: {{color1}}; /* Red */
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#pulseaudio {
+  color: {{color4}}; /* Blue */
+}
+
+#pulseaudio.muted {
+  color: {{color8}};
+}
+
+#clock {
+  color: {{color6}}; /* Teal */
+}
+
+#custom-power {
+  color: {{color6}}; /* Brighter Red/Orange */
+}
+
+#battery {
+color: {{color6}}
+}
+
+/* --- Tooltip --- */
+tooltip {
+  background-color: {{background}};
+  border: 2px solid {{color4}};
+}
+
+tooltip label {
+  color: {{foreground}};
+}
+
+/* --- Animations --- */
+@keyframes blink {
+  to {
+    background-color: {{color1}};
+    color: {{foreground}};
+  }
+}

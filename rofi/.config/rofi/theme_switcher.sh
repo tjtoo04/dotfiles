@@ -17,10 +17,14 @@ else
     if [ -f "$SELECTED_WALL" ]; then
         # Run wallust
         $SWAY_BIN -i "$SELECTED_WALL" >/dev/null 2>&1 &
+        ln -sf "$SELECTED_WALL" "$HOME/.config/mango/current_wallpaper"
         $WALLUST_BIN run "$SELECTED_WALL" >/dev/null 2>&1
+        pkill waybar
+        waybar >/dev/null 2>&1 &
         if [ "$DESKTOP_SESSION" == "mango" ]; then
             mmsg -d reload_config
         fi
+        swaync-client --reload-config --reload-css >/dev/null 2>&1 &
         swayosd-client --config="$HOME/.config/swayosd/config.toml"
 
         # IMPORTANT: To make Rofi close after selection, we exit here

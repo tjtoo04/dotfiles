@@ -88,6 +88,7 @@
   },
   "memory": {
     "format": " {used:0.1f}Gi",
+    "on-click": "ghostty -e btop",
   },
   "pulseaudio": {
     "format": "{icon} {volume}%",
