@@ -50,6 +50,7 @@ window#waybar {
 #memory,
 #window,
 #custom-notification,
+#tray-expander,
 #battery,
 #mpris {
   padding: 0.3rem 0.6rem;
@@ -117,6 +118,10 @@ window#waybar {
 }
 
 #custom-notification {
+color: {{color6}}
+}
+
+#tray-expander {
 color: {{color6}}
 }
 

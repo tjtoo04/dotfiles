@@ -50,6 +50,7 @@ window#waybar {
 #memory,
 #window,
 #custom-notification,
+#tray-expander,
 #battery,
 #mpris {
   padding: 0.3rem 0.6rem;
@@ -117,7 +118,11 @@ window#waybar {
 }
 
 #custom-notification {
-  color: #e0dfc2; /* Brighter Red/Orange */
+  color: #e0dfc2;
+}
+
+#tray-expander {
+  color: #e0dfc2;
 }
 
 #battery {
