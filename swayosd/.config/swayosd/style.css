@@ -1,8 +1,8 @@
-@define-color background-color #19181A;
-@define-color border-color #383C31;
-@define-color label #E7E7D8;
-@define-color image #A59D93;
-@define-color progress #E0DFC2;
+@define-color background-color #111111;
+@define-color border-color #11110F;
+@define-color label #EFE5D6;
+@define-color image #777257;
+@define-color progress #F0DCBE;
 
 /* @import "~/.config/wallust/colors.css"; */
 

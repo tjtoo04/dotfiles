@@ -4,28 +4,28 @@ css = { src = "colors.css", dst = "~/.config/" }
  */
 
 :root {
-    --wallpaper: url("/home/tjtoo04/Wallpapers/gameboy.png");
+    --wallpaper: url("/home/tjtoo04/Wallpapers/citadel.png");
 
     /* Special */
-    --background: #19181A;
-    --foreground: #F4F4EA;
-    --cursor: #AAB39F;
+    --background: #111111;
+    --foreground: #FAF3E8;
+    --cursor: #A19B8F;
 
     /* Colors */
-    --color0:  #403F41;
-    --color1:  #383C31;
-    --color2:  #5F7255;
-    --color3:  #7A6A61;
-    --color4:  #A59D93;
-    --color5:  #8CAD82;
-    --color6:  #E0DFC2;
-    --color7:  #E7E7D8;
-    --color8:  #A2A197;
-    --color9:  #383C31;
-    --color10: #5F7255;
-    --color11: #7A6A61;
-    --color12: #A59D93;
-    --color13: #8CAD82;
-    --color14: #E0DFC2;
-    --color15: #E7E7D8;
+    --color0:  #393939;
+    --color1:  #11110F;
+    --color2:  #494336;
+    --color3:  #8B6A5C;
+    --color4:  #777257;
+    --color5:  #AEA07B;
+    --color6:  #F0DCBE;
+    --color7:  #EFE5D6;
+    --color8:  #A7A096;
+    --color9:  #11110F;
+    --color10: #494336;
+    --color11: #8B6A5C;
+    --color12: #777257;
+    --color13: #AEA07B;
+    --color14: #F0DCBE;
+    --color15: #EFE5D6;
 }

@@ -1,21 +1,21 @@
 /* SwayNC Template for Wallust - Gameboy Palette */
 
-@define-color cc-bg #19181A;
-@define-color noti-border-color #A2A197;
-@define-color noti-bg #403F41;         
-@define-color noti-bg-darker #19181A;
-@define-color noti-bg-hover #383C31;  
-@define-color noti-bg-focus #403F41;
-@define-color noti-close-bg #A59D93; 
-@define-color noti-close-bg-hover #A59D93; 
-@define-color text-color #F4F4EA;
-@define-color text-color-disabled #A2A197;
-@define-color bg-selected #5F7255;  
-@define-color border-green #5F7255;
-@define-color red-base #7A6A61;   
-@define-color red-hover #7A6A61;
-@define-color green-base #8CAD82;
-@define-color blue-base #A59D93; 
+@define-color cc-bg #111111;
+@define-color noti-border-color #A7A096;
+@define-color noti-bg #393939;         
+@define-color noti-bg-darker #111111;
+@define-color noti-bg-hover #11110F;  
+@define-color noti-bg-focus #393939;
+@define-color noti-close-bg #777257; 
+@define-color noti-close-bg-hover #777257; 
+@define-color text-color #FAF3E8;
+@define-color text-color-disabled #A7A096;
+@define-color bg-selected #494336;  
+@define-color border-green #494336;
+@define-color red-base #8B6A5C;   
+@define-color red-hover #8B6A5C;
+@define-color green-base #AEA07B;
+@define-color blue-base #777257; 
 
 * {
   font-family: "Monaspace Argon NF";

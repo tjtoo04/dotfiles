@@ -13,8 +13,8 @@
 window#waybar {
   transition-property: background-color;
   transition-duration: 0.5s;
-  background-color: #19181a;
-  /* border-bottom: 2px solid #A2A197; */ /* Optional: adds a separator line */
+  background-color: #111111;
+  /* border-bottom: 2px solid #A7A096; */ /* Optional: adds a separator line */
 }
 
 /* --- Workspaces --- */
@@ -22,23 +22,23 @@ window#waybar {
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
   border-radius: 6px;
-  background-color: #a2a197; /* Muted background for inactive */
-  color: #f4f4ea;
+  background-color: #A7A096; /* Muted background for inactive */
+  color: #FAF3E8;
 }
 
 #workspaces button:hover {
-  color: #19181a;
-  background-color: #e7e7d8; /* Brightest contrast */
+  color: #111111;
+  background-color: #EFE5D6; /* Brightest contrast */
 }
 
 #workspaces button.active {
-  background-color: #a59d93; /* Primary Accent (Blue) */
-  color: #19181a;
+  background-color: #777257; /* Primary Accent (Blue) */
+  color: #111111;
 }
 
 #workspaces button.urgent {
-  background-color: #383c31; /* Alert Color (Red) */
-  color: #f4f4ea;
+  background-color: #11110F; /* Alert Color (Red) */
+  color: #FAF3E8;
 }
 
 /* --- System Modules --- */
@@ -56,44 +56,44 @@ window#waybar {
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
   border-radius: 6px;
-  background-color: #403f41; /* Dark contrast box */
+  background-color: #393939; /* Dark contrast box */
 }
 
 /* --- Specific Module Coloring --- */
 #custom-logo {
-  color: #a59d93; /* Bright Blue */
+  color: #777257; /* Bright Blue */
 }
 
 #window {
-  color: #e0dfc2; /* Cyan/Aqua */
+  color: #F0DCBE; /* Cyan/Aqua */
 }
 
 #mpris.playing {
-  color: #5f7255; /* Vibrant Green */
+  color: #494336; /* Vibrant Green */
 }
 
 #mpris.paused {
-  color: #a2a197; /* Grayed out */
+  color: #A7A096; /* Grayed out */
 }
 
 #cpu {
-  color: #8cad82; /* Magenta/Pink */
+  color: #AEA07B; /* Magenta/Pink */
 }
 
 #memory {
-  color: #7a6a61; /* Yellow/Orange */
+  color: #8B6A5C; /* Yellow/Orange */
 }
 
 #battery {
-  color: #5f7255; /* Greenish */
+  color: #494336; /* Greenish */
 }
 
 #battery.warning {
-  color: #7a6a61; /* Orange */
+  color: #8B6A5C; /* Orange */
 }
 
 #battery.critical {
-  color: #383c31; /* Red */
+  color: #11110F; /* Red */
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: linear;
@@ -102,47 +102,47 @@ window#waybar {
 }
 
 #pulseaudio {
-  color: #a59d93; /* Blue */
+  color: #777257; /* Blue */
 }
 
 #pulseaudio.muted {
-  color: #a2a197;
+  color: #A7A096;
 }
 
 #clock {
-  color: #e0dfc2; /* Teal */
+  color: #F0DCBE; /* Teal */
 }
 
 #custom-power {
-  color: #e0dfc2; /* Brighter Red/Orange */
+  color: #F0DCBE; /* Brighter Red/Orange */
 }
 
 #custom-notification {
-  color: #e0dfc2;
+color: #F0DCBE
 }
 
 #tray-expander {
-  color: #e0dfc2;
+color: #F0DCBE
 }
 
 #battery {
-  color: #e0dfc2;
+color: #F0DCBE
 }
 
 /* --- Tooltip --- */
 tooltip {
-  background-color: #19181a;
-  border: 2px solid #a59d93;
+  background-color: #111111;
+  border: 2px solid #777257;
 }
 
 tooltip label {
-  color: #f4f4ea;
+  color: #FAF3E8;
 }
 
 /* --- Animations --- */
 @keyframes blink {
   to {
-    background-color: #383c31;
-    color: #f4f4ea;
+    background-color: #11110F;
+    color: #FAF3E8;
   }
 }
