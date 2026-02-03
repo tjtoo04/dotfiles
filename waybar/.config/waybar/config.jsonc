@@ -7,7 +7,7 @@
   "gtk-layer-shell": true,
   "passthrough": false,
   "fixed-center": true,
-  "modules-left": ["ext/workspaces", "custom/sep", "dwl/window#title"],
+  "modules-left": ["ext/workspaces", "custom/sep", "dwl/window"],
   "modules-center": ["mpris"],
   "modules-right": [
     "group/tray-expander",
@@ -20,6 +20,9 @@
     "battery",
     "custom/power",
   ],
+  "dwl/window": {
+    "format": "[{layout}] {title}",
+  },
   "hyprland/workspaces": {
     "on-click": "activate",
     "format": "{id}",
