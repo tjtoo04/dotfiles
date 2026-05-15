@@ -12,10 +12,10 @@ vim.keymap.set("n", "<Leader>q", ":quit<Return>", opts)
 vim.keymap.set("n", "<Leader>Q", ":qa<Return>", opts)
 
 -- Tabs
-vim.keymap.set("n", "te", ":tabedit")
+vim.keymap.set("n", "<leader>te", ":tabedit ")
 vim.keymap.set("n", "<tab>", ":tabnext<Return>", opts)
 vim.keymap.set("n", "<s-tab>", ":tabprev<Return>", opts)
-vim.keymap.set("n", "tw", ":bd<Return>", opts)
+vim.keymap.set("n", "<leader>tw", ":bd<Return>", opts)
 
 -- Split window
 vim.keymap.set("n", "ss", ":split<Return>", opts)
