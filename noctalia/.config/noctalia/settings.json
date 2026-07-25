@@ -19,7 +19,7 @@
         "overviewLayer": true,
         "pinnedApps": [
             "appimagekit_f745ddd11152c9cb45780e633c9411b7-Zen_Browser",
-            "com.rtosta.zapzap"
+            "winboat"
         ],
         "position": "center",
         "screenshotAnnotationTool": "",
@@ -479,7 +479,7 @@
         "firstDayOfWeek": -1,
         "hideWeatherCityName": false,
         "hideWeatherTimezone": false,
-        "name": "Puchong",
+        "name": "Kuala Lumpur",
         "showCalendarEvents": true,
         "showCalendarWeather": true,
         "showWeekNumberInCalendar": false,
@@ -716,7 +716,7 @@
         ],
         "useOriginalImages": false,
         "useSolidColor": false,
-        "useWallhaven": false,
+        "useWallhaven": true,
         "viewMode": "single",
         "wallhavenApiKey": "",
         "wallhavenCategories": "100",
