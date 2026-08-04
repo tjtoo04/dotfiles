@@ -15,6 +15,7 @@
 # mako &
 dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=wlroots &
 # waybar -c ~/.config/waybar/config.jsonc -s ~/.config/waybar/style.css >/dev/null 2>&1 &
-qs -c noctalia-shell
+# qs -c noctalia-shell
+noctalia
 # swaybg -i ~/.config/mango/current_wallpaper >/dev/null 2>&1 &
 # exec swayosd-server &
